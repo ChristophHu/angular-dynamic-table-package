@@ -1,0 +1,7 @@
+<div class="flex flex-grow px-4 mb-16 overflow-y-auto scrollbar-hide" cdk-scrollable #content>
+  <div class="flex flex-col w-full overflow-x-hidden xl:overflow-x-hidden">
+    <div class="absolute mt-20 mb-4 mx-4 inset-0 flex flex-col">
+      <dynamic-table [table]="table" [data$]="data$" (action)="returnTableAction($event)"></dynamic-table>
+    </div>
+  </div>
+</div>
